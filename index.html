@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>Meraki | Hotel & Suites </title>
+
+</head>
+
+<body>
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-restaurant" viewBox="0 0 24 24">
+                <path
+                    d="M15.984 6q0-1.406 1.523-2.695t3.492-1.289v19.969h-2.484v-7.969h-2.531v-8.016zM11.016 9v-6.984h1.969v6.984q0 1.594-1.078 2.742t-2.672 1.242v9h-2.484v-9q-1.594-0.094-2.672-1.242t-1.078-2.742v-6.984h2.016v6.984h1.969v-6.984h2.016v6.984h2.016z">
+                </path>
+            </symbol>
+            <symbol id="icon-event_available" viewBox="0 0 24 24">
+                <path
+                    d="M18.984 18.984v-10.969h-13.969v10.969h13.969zM18.984 3q0.797 0 1.406 0.609t0.609 1.406v13.969q0 0.797-0.609 1.406t-1.406 0.609h-13.969q-0.844 0-1.43-0.586t-0.586-1.43v-13.969q0-0.797 0.586-1.406t1.43-0.609h0.984v-2.016h2.016v2.016h7.969v-2.016h2.016v2.016h0.984zM16.547 11.063l-5.953 5.953-3.188-3.188 1.078-1.078 2.109 2.109 4.875-4.875z">
+                </path>
+            </symbol>
+            <symbol id="icon-favorite" viewBox="0 0 24 24">
+                <path
+                    d="M12 21.328l-1.453-1.313q-2.484-2.25-3.609-3.328t-2.508-2.672-1.898-2.883-0.516-2.648q0-2.297 1.57-3.891t3.914-1.594q2.719 0 4.5 2.109 1.781-2.109 4.5-2.109 2.344 0 3.914 1.594t1.57 3.891q0 1.828-1.219 3.797t-2.648 3.422-4.664 4.359z">
+                </path>
+            </symbol>
+            <symbol id="icon-pool" viewBox="0 0 24 24">
+                <path
+                    d="M14.016 5.484q0-1.031 0.727-1.758t1.758-0.727 1.758 0.727 0.727 1.758-0.727 1.781-1.758 0.75-1.758-0.75-0.727-1.781zM8.672 12q-0.563 0-1.172-0.375-0.188-0.141-0.75-0.375l3.234-3.234-0.984-1.031q-1.5-1.5-3.984-1.5v-2.484q1.922 0 3.141 0.445t2.344 1.57l6.422 6.375q-0.281 0.188-0.422 0.234-0.609 0.375-1.172 0.375-0.516 0-1.125-0.375-1.031-0.609-2.203-0.609t-2.203 0.609q-0.609 0.375-1.125 0.375zM21.984 16.5q-1.078 0-2.156-0.656-0.516-0.328-1.172-0.328-0.609 0-1.125 0.328-1.078 0.656-2.203 0.656-1.078 0-2.156-0.656-0.516-0.328-1.172-0.328-0.609 0-1.125 0.328-1.078 0.656-2.203 0.656-1.078 0-2.156-0.656-0.516-0.328-1.172-0.328-0.609 0-1.125 0.328-1.078 0.656-2.203 0.656v-2.016q0.609 0 1.125-0.328 1.078-0.656 2.203-0.656 1.078 0 2.156 0.656 0.516 0.328 1.172 0.328 0.609 0 1.125-0.328 1.078-0.656 2.203-0.656 1.078 0 2.156 0.656 0.516 0.328 1.172 0.328 0.609 0 1.125-0.328 1.078-0.656 2.203-0.656 1.078 0 2.156 0.656 0.516 0.328 1.172 0.328v2.016zM21.984 21q-1.078 0-2.156-0.656-0.516-0.328-1.172-0.328-0.609 0-1.125 0.328-1.078 0.656-2.203 0.656-1.078 0-2.156-0.656-0.516-0.328-1.172-0.328-0.609 0-1.125 0.328-1.078 0.656-2.203 0.656t-2.203-0.656q-0.516-0.328-1.125-0.328-0.656 0-1.172 0.328-1.078 0.656-2.156 0.656v-2.016q0.609 0 1.125-0.328 1.078-0.656 2.203-0.656 1.078 0 2.156 0.656 0.516 0.328 1.172 0.328 0.609 0 1.125-0.328 1.078-0.656 2.203-0.656t2.203 0.656q0.516 0.328 1.125 0.328 0.656 0 1.172-0.328 1.078-0.656 2.156-0.656 1.125 0 2.203 0.656 0.516 0.328 1.125 0.328v2.016z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <header class="header">
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Meraki</span>
+                <span class="heading-primary--sub">Hotel & Suites </span>
+            </h1>
+
+            <a href="#section-tours" class="btn btn--white btn--animated">Book now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Meraki hotel in Santorini
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-2">
+
+                    <p class="paragraph">
+                        Meraki Hotel & Suites is located in Oia, Santorini. From the rooms of the hotel the view extends
+                        to the magnificent bay of the caldera. Your eye will feel the impressive volcano while enjoying
+                        amphitheatrical views across the island.
+                    </p>
+
+
+                    <p class="paragraph">
+                        You can also experience an intimate gourmet dinner with an incredible view: Aegean sea, the
+                        caldera and the volcano. Enveloped by the eternal blue sky and the infinite blue sea, our
+                        restaurant invite couples and families to the ultimate stellar dining experience with
+                        exceptional gourmet creations.
+                    </p>
+
+                    <a href="#" class="btn-text">Learn more &rarr;</a>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img alt="Photo 1" class="composition__photo composition__photo--p1"
+                            src="https://images.unsplash.com/photo-1498503403619-e39e4ff390fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80">
+
+                        <img alt="Photo 2" class="composition__photo composition__photo--p2"
+                            src="https://images.unsplash.com/photo-1560774928-59e68482b83e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80">
+
+                        <img alt="Photo 3" class="composition__photo composition__photo--p3"
+                            src="https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-features">
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <svg class="icon icon-favorite">
+                            <use xlink:href="#icon-favorite"></use>
+                        </svg>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Enjoy your stay</h3>
+                        <p class="feature-box__text">
+                            Meraki Hotel has 25 rooms divided into three types, depending on their capacity and
+                            facilities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <svg class="icon icon-pool">
+                            <use xlink:href="#icon-pool"></use>
+                        </svg>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
+                        <p class="feature-box__text">
+                            You can enjoy the beautiful views of the Aegean sea while swimming on our amazing pool.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <svg class="icon icon-event_available">
+                            <use xlink:href="#icon-event_available"></use>
+                        </svg>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Discover Santorini</h3>
+                        <p class="feature-box__text">
+                            From Meraki Hotel you can book the best experiences to explore Santorini like never before.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <svg class="icon icon-restaurant">
+                            <use xlink:href="#icon-restaurant"></use>
+                        </svg>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Dine by the Sea</h3>
+                        <p class="feature-box__text">
+                            You can enjoy one of the best dining experiences on the island in our gourmet restaurant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-tours" id="section-tours">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Rest & Sleep
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">Double Room</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Sea and garden views</li>
+                                    <li>Private balcony (w/o sea view)</li>
+                                    <li> Up to 2 passengers </li>
+                                    <li>Double bed</li>
+                                    <li>Daily room cleaning </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+
+                                    <p class="card__price-value">205€</p>
+                                    <p class="card__price-only">per night</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">Suite</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Caldera views</li>
+                                    <li>Private balcony with sea view</li>
+                                    <li>Up to 2 passengers</li>
+                                    <li>Queen-size bed</li>
+                                    <li>Daily room cleaning </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-value">265€</p>
+                                    <p class="card__price-only">per night</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">Superior Suite</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Caldera and volcano views</li>
+                                    <li>Private pool with sea view</li>
+                                    <li>Up to 4 passengers</li>
+                                    <li>King-size bed</li>
+                                    <li>Daily room cleaning </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-value">324€</p>
+                                    <p class="card__price-only">per night</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-stories">
+
+
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Testimonials & reviews
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="https://images.unsplash.com/photo-1538920990705-d14d7a09e14c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80"
+                            alt="Passenger review" class="story__img">
+                        <figcaption class="story__caption">John Doe</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Dreamed Honeymoon</h3>
+                        <p>
+                            This was the best place that we ever traveled. The hospitality was incredible. Everyone was
+                            unbelievably nice and willing to help with whatever requests we had. The team upgraded us to
+                            the nicest suite with private pool and sea view. Truly an unforgettable experience, and we
+                            are already planning on coming back.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="https://images.unsplash.com/photo-1498925595804-ce6abf70c372?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2568&q=80"
+                            alt="Passenger review" class="story__img">
+                        <figcaption class="story__caption">Marie Miller</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Breathtaking views!</h3>
+                        <p>
+                            Wonderful stay at one of the best hotels for a romantic getaway any couple would ask for.
+                            The view of the Caldera was out of a postcard and it was no beautiful and peaceful being
+                            there. The food also top notch, we will never forget dining at the sea with that amazing
+                            view.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn-text">Read all &rarr;</a>
+            </div>
+        </section>
+
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Start booking now
+                                </h2>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+
+                            <div class="form__group u-margin-bottom-big">
+                                <div class="form__date">
+                                    <label for="start">Check-in </label>
+
+                                    <input type="date" id="start" name="trip-start" value="yyyy-mm-dd" min="2020-09-01"
+                                        max="2022-12-31">
+                                </div>
+
+                                <div class="form__date">
+                                    <label for="start">Check-out </label>
+
+                                    <input type="date" id="start" name="trip-start" value="yyyy-mm-dd" min="2020-09-01"
+                                        max="2022-12-31">
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="btn btn--blue">Search &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Hotel Policies & Payment methods</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    &copy; Pablo Torres
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                    alt="Tour photo" class="popup__img">
+                <img src="https://images.unsplash.com/photo-1528718571269-d0694a3bc668?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                    alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                    booking</h3>
+                <p class="popup__text">
+                    These terms and conditions apply to all bookings made to stay at Meraki Hotel, whether made via our
+                    website, by email or over the telephone. They contain important information about your stay and we
+                    kindly ask that you read these carefully.
+                    <br>Upon making a reservation with us here at Meraki, you agree to our standard cancellation policy.
+                    <br>In order to avoid a cancellation charge of one night accommodation, per room, you must contact
+                    us at before 3pm local time, 72 hours prior to your day of arrival. This policy is valid throughout
+                    the reserved stay and applicable to early departures.
+                    <br> A late cancellation will result in a fee of the first night’s accommodation, unless otherwise
+                    specified.
+                    Reservations that are required to be paid by method other than the credit card registered in the
+                    guest name, are to be prepaid in full, one day before reserved arrival. Payment may be processed via
+                    credit card or bank transfer.
+                    <br>Check-in time is 3:00 p.m. local time.
+                    Check-out time is 12:00 noon local time.
+                    <br>Our home is non-smoking in all areas. Breach of this policy entitles the property to charge the
+                    guest card at the additional value of that night’s accomodation.
+                </p>
+                <a href="#" class="btn btn--blue">Book now</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
