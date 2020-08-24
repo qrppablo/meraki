@@ -1,2 +1,2 @@
 # meraki
-Fictional responsive hotel webpage: htpps://qrppablo.github.io/meraki
+Fictional responsive hotel webpage: https://qrppablo.github.io/meraki
